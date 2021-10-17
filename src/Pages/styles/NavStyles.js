@@ -27,6 +27,7 @@ export const NavLink = styled(Link)`
 
 export const Bars = styled(FaBars)`
   display: none;
+  z-index: 50;
 
   @media screen and (max-width: 768px) {
     display: block;
