@@ -10,7 +10,7 @@ import Cart from "./Pages/Cart";
 import {Nav, NavLink, Bars, NavList, NavButton, NavButtonLink} from "./Pages/styles/NavStyles";
 // import ReactGA from "react-ga";
 
-const Routes = () => {
+const Routes = ({toggle, isOpen}) => {
 
   return (
     <div>
@@ -18,7 +18,7 @@ const Routes = () => {
         <NavLink to="/">
           <h1>Logo</h1>
         </NavLink>
-        <Bars />
+        <Bars onClick={toggle} />
         <NavList>
           <NavLink to="/home" activeStyle>
             Home
